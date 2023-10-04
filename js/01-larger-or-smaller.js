@@ -25,15 +25,17 @@ validNumber = !invalidNumber
 //document.write(invalidNumber2);
 //document.write(invalidNumber);
 //document.write(validNumber);
-
+//if number entered continue, else display message and exit
 if (validNumber) {
   //assign largerNumber to first number entered
   largerNumber = number1;
+  //if number 2 is greater than number 1 assign as larger number
   if (number2 > number1) { 
     largerNumber = number2;
   }
   //Display the result
   document.write(`Comparing numbers...`);
+  //if the numbers are the same display message
   if (number1 == number2) {
     document.write(`the numbers are the same`);
   } else {
